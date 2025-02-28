@@ -3,7 +3,7 @@
 
 Anforderungen:
 
-Mit meiner Datenbank möchte ich neue Lernende eintragen können (LG22, LG23, ...), ausserdem sollte man von allen die Daten korriegeren können.
+Mit meiner Datenbank möchte ich neue Lernende eintragen können (LG22, LG23, ...), ausserdem sollte man von allen die Daten korriegeren können. Die Datenbank sollte für jede Person anwendbar sein und übersichtlich.
 
 Technische Überlegungen:
 
@@ -11,6 +11,10 @@ Ich wollte ein sehr einfaches Interface und dabei mehrere Seiten verwenden und e
 
 Gestalterische Überlegungen:
 
-Beim Design wollte ich Rot mitnehmen und ein einfaches, schlichtes Design. Sobald man etwas neues eingegeben hat oder geändert hat, sollte man eine kurze Rückmeldung bekommen.
+Beim Design wollte ich Rot (SBW) mitnehmen und ein einfaches, schlichtes Design. Sobald man etwas neues eingegeben hat oder geändert hat, sollte man eine kurze Rückmeldung bekommen.
+
+Ein Wireframe ist unter Assets/Wireframe/Wireframe_SWe.pdf ab
 
 Valedierung:
+
+Die Validierung ist unter Assets/Dokumentation/Dokumentation.pdf abgelegt. Der Test zeigt, dass man ohne Probleme alle eingegebenen Daten ändern kann.
