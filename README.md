@@ -7,7 +7,7 @@ Mit meiner Datenbank möchte ich neue Lernende eintragen können (LG22, LG23, ..
 
 Technische Überlegungen:
 
-Ich wollte ein sehr einfaches Interface und dabei mehrere Seiten verwenden und eine einfache Bedienung.
+Ich wollte ein sehr einfaches Interface und dabei mehrere Seiten verwenden und eine einfache Bedienung. Ausserdem wollte ich nicht alles auf einer Webseite haben sondern zwei seperate (Neue Mitglieder und bestehende Mitglieder). Die Buttons wollte ich mit einem grossen Button markieren, damit man es besser sieht.
 
 Gestalterische Überlegungen:
 
