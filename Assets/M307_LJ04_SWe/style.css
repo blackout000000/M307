@@ -1,0 +1,143 @@
+:root {
+  font: normal 20px/1.2 Verdana;
+  color: white;
+}
+
+body {
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header,
+#main-footer,
+main {
+  margin: 2em;
+}
+
+#main-form>div {
+  margin: 1em 2em;
+}
+
+#main-form>div>:nth-child(2n+1):not([type="radio"]) {
+  display: inline-block;
+  text-align: right;
+  width: 8em;
+}
+
+#main-form>div>:nth-child(2n) {
+  display: inline-block;
+  width: 15em;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#main-form>div .radios {
+  box-shadow: none;
+}
+
+input:not([type="submit"]):not([type="radio"]),
+textarea {
+  background: linear-gradient(45deg, #5f2c82, #49a09d);
+  color: inherit;
+  font: inherit;
+}
+
+#main-form #main-button {
+  background: #2c8260;
+  text-align: center;
+  height: 4em;
+  width: 100%;
+  max-width: calc(15em + 8em);
+  color: inherit;
+}
+
+#main-form #main-button:hover {
+  box-shadow: none;
+}
+
+#main-form input {
+  height: 2em;
+  border: none;
+  padding-inline: 0.75em;
+  border-radius: 0.8em;
+  transition: box-shadow 200ms;
+}
+
+#main-form input:hover {
+  background: #49a09d;
+}
+
+#main-form input:focus {
+  background: #5f2c82;
+}
+
+label.container input[type=radio] {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+label.container {
+  position: relative;
+  padding-left: 1.25em;
+}
+
+label.container input[type=radio] ~.radiobtn {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  background-color: #5f2c82;
+  border-radius: 50%;
+}
+
+label.container input[type="radio"]:checked ~.radiobtn {
+  background-color: #5f2c82;
+}
+
+label.container:hover input[type="radio"] ~.radiobtn {
+  background-color: #49a09d;
+}
+
+label.container input[type="radio"]~.radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+label.container input[type="radio"]~.radiobtn:after {
+  top: 0.25em;
+  left: 0.25em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: white;
+}
+
+label.container input[type="radio"]:checked~.radiobtn:after {
+  display: block;
+}
+
+footer {
+  font-size: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (width <=650px) {
+  #main-form>div {
+    margin-inline: 0;
+  }
+
+  #main-form>div>:nth-child(2n) {
+    width: 90%;
+  }
+
+  #main-form>div>:nth-child(2n+1):not([type="radio"]) {
+    text-align: left;
+  }
+}

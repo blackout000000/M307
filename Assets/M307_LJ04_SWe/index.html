@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validate</title>
+  <link rel="stylesheet" href="ressourcen/style.css">
+</head>
+<body>
+  <header id="main-header">
+    <h1 id="haupt-titel">Form Validate</h1>
+  </header>
+
+  <main>
+    <form action="" method="get" id="main-form">
+      <div>
+        <label for="vorname">Vorname</label>
+        <input type="text" id="vorname" name="vorname" placeholder="Gib deinen Vornamen ein" required>
+      </div>
+      <div>
+        <label for="nachname">Nachname</label>
+        <input type="text" id="nachname" name="nachname" placeholder="Gib deinen Nachnamen ein" required>
+      </div>
+      <div>
+        <label for="geburtsdatum">Geburtsdatum</label>
+        <input type="date" id="geburtsdatum" name="geburtsdatum" required>
+      </div>
+      <div>
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" placeholder="z.B. name@example.com" required>
+      </div>
+      <div>
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="+41 79 123 45 67" required>
+      </div>
+      <div>
+        <label for="anrede">Anrede</label>
+        <div class="radios">
+          <label class="container">Frau
+            <input type="radio" id="frau" name="anrede" value="frau" required>
+            <span class="radiobtn"></span>
+          </label>
+          <label class="container">Mann
+            <input type="radio" id="mann" name="anrede" value="mann">
+            <span class="radiobtn"></span>
+          </label>
+          <label class="container">Divers
+            <input type="radio" id="divers" name="anrede" value="divers">
+            <span class="radiobtn"></span>
+          </label>
+        </div>
+      </div>
+      <div>
+        <label for="anrede-select">Anrede (Dropdown)</label>
+        <select id="anrede-select" name="anrede">
+          <option value="frau">Frau</option>
+          <option value="mann">Mann</option>
+          <option value="divers">Divers</option>
+        </select>
+      </div>
+      <div>
+        <label for="anrede-datalist">Anrede (Freie Eingabe)</label>
+        <input list="anrede-options" id="anrede-datalist" name="anrede">
+        <datalist id="anrede-options">
+          <option value="Frau">
+          <option value="Mann">
+          <option value="Divers">
+        </datalist>
+      </div>
+      <div>
+        <input type="submit" value="OK" id="main-button">
+      </div>
+    </form>
+  </main>
+
+  <footer id="main-footer">
+    <p>&copy;SBW Neue Medien</p>
+  </footer>
+</body>
+</html>
