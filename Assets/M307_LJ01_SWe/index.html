@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Design</title>
+  <link rel="stylesheet" href="/assets/styles/general.css">
+  <style>
+    #tabel {
+      tr {
+        td:first-child {
+          width: 100px;
+          text-align: right;
+        }
+ 
+        td:last-child {
+ 
+          >input,
+          >textarea,
+          button {
+            width: 200px;
+          }
+        }
+      }
+    }
+ 
+    #grid {
+      display: grid;
+      grid-template-columns: 100px 200px;
+    }
+
+    #list {
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+ 
+      li {
+        display: grid;
+        grid-template-columns: 100px 200px;
+        align-items: center;
+      }
+ 
+      label {
+        text-align: right;
+        margin-right: 10px;
+      }
+ 
+      input,
+      textarea,
+      button {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+ 
+<body>
+  <h1>Tabel</h1>
+  <form id="tabel">
+    <table>
+      <tr>
+        <td><label for="event">Event</label></td>
+        <td><input type="text" id="event" name="event"></td>
+      </tr>
+ 
+      <tr>
+        <td><label for="date">Datum</label></td>
+        <td><input type="date" id="date" name="date"></td>
+      </tr>
+ 
+      <tr>
+        <td><label for="termin">Termin</label></td>
+        <td><textarea id="termin" name="termin"></textarea></td>
+      </tr>
+ 
+      <tr>
+        <td><label></label></td>
+        <td><button type="submit">Absenden</button></td>
+      </tr>
+    </table>
+  </form>
+ 
+  <h1>Grid</h1>
+  <form id="grid">
+    <label for="event">Event</label>
+    <input type="text" id="event" name="event">
+ 
+    <label for="date">Datum</label>
+    <input type="date" id="date" name="date">
+ 
+    <label for="termin">Termin</label>
+    <textarea id="termin" name="termin"></textarea>
+ 
+    <label></label>
+    <button type="submit">Absenden</button>
+  </form>
+ 
+  <h1>Liste</h1>
+  <form id="list">
+    <ul>
+      <li>
+        <label for="event">Event</label>
+        <input type="text" id="event" name="event">
+      </li>
+      <li>
+        <label for="date">Datum</label>
+        <input type="date" id="date" name="date">
+      </li>
+      <li>
+        <label for="termin">Termin</label>
+        <textarea id="termin" name="termin"></textarea>
+      </li>
+      <li>
+        <label></label>
+        <button type="submit">Absenden</button>
+      </li>
+    </ul>
+  </form>
